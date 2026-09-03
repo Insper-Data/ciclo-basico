@@ -1,6 +1,19 @@
+# Cópia de trabalho da base: o notebook recria sozinho, cada aluno tem a sua
 data/
-*.pyc
-.venv
+
+# As bases baixadas automaticamente pelo notebook não entram no repositório
 *.csv
-*.txt 
+
+# ...menos as que vêm do Google Drive e não têm como ser baixadas de novo.
+# Essas ficam versionadas para a pasta da aula já sair zipada com a base dentro.
+!Aula 1/data_raw/*.csv
+!Gabaritos/Aula 1/data_raw/*.csv
+
+# Ambiente virtual e cache do Python
 env/
+.venv
+__pycache__/
+*.pyc
+
+*.txt
+!requirements.txt
